@@ -32,7 +32,7 @@ for cnt = 1:T
     
     % Jn: estimator of J
     Jn(cnt) = EstFisherInfo(Yi,a,a,kn);
-    Jr(cnt) = RegEstFisherInfo(Yi,a,a,kn,snr,varX);
+    Jr(cnt) = RegularizedEstFI(Yi,a,a,kn);
 end
 % MMSE = 1-snr.*J;
 % % MMSEg = 1./(1+snr); % MMSE for Gaussian
