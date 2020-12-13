@@ -1,4 +1,4 @@
-function [Jn] = RegularizedEstFI(Yi,a0,a1,kn)
+function [Jn] = RegEstFisherInfo(Yi,a0,a1,kn)
 % Estimator of Fisher information 
 % Inputs:
 %   Yi: psnr*n matrix of samples
